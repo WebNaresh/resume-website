@@ -17,7 +17,7 @@ type Props = {
 
 const GearCard = ({ gear }: Props) => {
   return (
-    <Card className="w-[300px]">
+    <Card className="w-[300px] h-[430px]">
       <CardHeader>
         <CardTitle className="">{gear.name}</CardTitle>
         <CardDescription>{gear.description}</CardDescription>

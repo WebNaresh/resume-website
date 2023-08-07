@@ -36,25 +36,23 @@ const MainNav = (props: Props) => {
     <div className="flex items-center">
       {rountes.map((ele, i) =>
         ele.href === "/" ? (
-          <>
-            <li>
-              <Link
-                className="mb-4 ml-2 mr-5 mt-3 flex items-center text-neutral-900  hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
-                href={ele.href}
-              >
-                <Image
-                  src="/nareshBhosale.jpg"
-                  height={40}
-                  width={40}
-                  className={`hover:border-foreground ${
-                    ele.active === true ? "border-foreground" : ""
-                  } border-2 rounded-full`}
-                  alt="TE Logo"
-                  loading="lazy"
-                />
-              </Link>
-            </li>
-          </>
+          <li key={i}>
+            <Link
+              className="mb-4 ml-2 mr-5 mt-3 flex items-center text-neutral-900  hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
+              href={ele.href}
+            >
+              <Image
+                src="/nareshBhosale.jpg"
+                height={40}
+                width={40}
+                className={`hover:border-foreground ${
+                  ele.active === true ? "border-foreground" : ""
+                } border-2 rounded-full`}
+                alt="TE Logo"
+                loading="lazy"
+              />
+            </Link>
+          </li>
         ) : (
           <li key={i} className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
             <Link

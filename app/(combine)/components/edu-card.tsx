@@ -1,3 +1,4 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { EducationCard } from "@/lib/interface";
 import Link from "next/link";
@@ -23,20 +24,23 @@ const Educard = ({ details, index }: Props) => {
       <div className="order-1 rounded-lg shadow-xl w-full lg:w-5/12 ">
         <div className=" order-1 mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-slate-900 dark:shadow-black/10">
           <div className="mb-4 flex justify-between">
-            <a
-              href="#!"
-              className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
+            <Link
+              href={details.link1}
+              className="text-lg text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
             >
               {details.heading}
-            </a>
-            <a
-              href="#!"
+            </Link>
+            <Link
+              href={details.link1}
               className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
             >
-              {details.year}
-            </a>
+              <Avatar>
+                <AvatarImage src={details.collegeImage} alt={details.heading} />
+                <AvatarFallback>{details.heading}</AvatarFallback>
+              </Avatar>
+            </Link>
           </div>
-          <p className="mb-6 text-neutral-700 dark:text-neutral-200">
+          <p className="mb-6 text-neutral-700 dark:text-neutral-400 text-sm">
             {details.description}
           </p>
           <div className="flex gap-4">

@@ -30,10 +30,18 @@ const Contact = (props: Props) => {
             <div className="mx-auto max-w-[700px]">
               <form>
                 <div className="relative mb-6" data-te-input-wrapper-init>
-                  <Input type="text" placeholder="Name" />
+                  <Input
+                    className="bg-transparent"
+                    type="text"
+                    placeholder="Name"
+                  />
                 </div>
                 <div className="relative mb-6" data-te-input-wrapper-init>
-                  <Input type="email" placeholder="Email" />
+                  <Input
+                    type="email"
+                    placeholder="Email"
+                    className="bg-transparent"
+                  />
                 </div>
                 <div className="relative mb-6" data-te-input-wrapper-init>
                   <Textarea placeholder="Type your message here." />

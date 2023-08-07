@@ -5,6 +5,7 @@ export interface EducationCard {
   link1: string;
   link2: string;
   year: string;
+  collegeImage: string;
 }
 export interface GearCardInterface {
   name: string;
