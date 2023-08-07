@@ -6,3 +6,14 @@ export interface EducationCard {
   link2: string;
   year: string;
 }
+export interface GearCardInterface {
+  name: string;
+  description: string;
+  image: string;
+  amazonLink: string;
+}
+export interface RoutesA {
+  href: string;
+  label: string;
+  active: boolean;
+}

@@ -38,7 +38,7 @@
 
   .dark {
     --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --foreground: 162 99% 41%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -52,14 +52,14 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
 
-    --primary: 210 40% 98%;
+    --primary: 162 99% 41%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
 
     --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent-foreground: 162 99% 41%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
@@ -75,4 +75,30 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: hsl(var(--foreground));
+}
+.hello:before {
+  display: block;
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  border-top: solid 9px transparent;
+  border-bottom: solid 9px transparent;
+}
+.hello:before {
+  left: -30px;
+  border-right: solid 10px hsl(var(--foreground));
+}
+.hello:after {
+  right: -30px;
+  border-left: solid 10px hsl(var(--foreground));
 }

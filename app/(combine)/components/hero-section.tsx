@@ -10,22 +10,22 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <section className="mb-10">
-      <div className="px-6 py-12 text-center md:px-12 lg:text-left">
+      <div className="px-6 pt-12 text-center md:px-12 lg:text-left">
         <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="mt-12 h-full lg:mt-0 flex flex-col justify-evenly">
               <span className="text-3xl text-muted-foreground">
-                Hi 👋, I'm <br />
+                Hi 👋, I&apos;m <br />
               </span>{" "}
               <div>
                 <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
                   Naresh Bhosale
                 </h1>
-                <div className="leading-7 [&:not(:first-child)]:mt-6 gap-4 flex">
+                <div className="leading-7 justify-center lg:justify-normal [&:not(:first-child)]:mt-6 gap-4 flex">
                   <Link
                     href={"https://www.facebook.com/iMNareshAtTheRateInfinite/"}
                   >
-                    <Button variant={"outline"}>
+                    <Button variant={"outline"} className=" bg-theme">
                       <FaFacebookF className="text-xl" color="#0573e7" />
                     </Button>
                   </Link>
@@ -54,7 +54,7 @@ const Hero = (props: Props) => {
                 </Link>
               </div>
             </div>
-            <div className="mb-12 lg:mb-0 flex flex-row-reverse">
+            <div className="mb-12 lg:mb-0 flex flex-row-reverse justify-center lg:justify-normal">
               <Image
                 draggable={false}
                 src="/image2.jpg"
