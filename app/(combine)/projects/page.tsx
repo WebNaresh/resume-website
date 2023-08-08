@@ -7,7 +7,7 @@ const Projects = (props: Props) => {
   return (
     <section className="px-8">
       <h1 className="hello mx-16 my-8 relative text-2xl ">My Projects</h1>
-      <div className="grid grid-cols-3 place-items-center gap-6 ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 place-items-center gap-6 ">
         {projects.map((ele, i) => (
           <ProjectCard details={ele} key={i} />
         ))}

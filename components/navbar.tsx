@@ -1,5 +1,6 @@
 import MainNav from "./main-nav";
 import { ModeToggle } from "./togle-button";
+import { Button } from "./ui/button";
 
 type Props = {};
 
@@ -10,7 +11,7 @@ const Navbar = (props: Props) => {
       data-te-navbar-ref
     >
       <div className="flex w-full flex-wrap items-center justify-between px-3">
-        <button
+        <Button
           className="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
           type="button"
           data-te-collapse-init
@@ -33,7 +34,7 @@ const Navbar = (props: Props) => {
               />
             </svg>
           </span>
-        </button>
+        </Button>
 
         <div
           className="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"

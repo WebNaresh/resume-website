@@ -9,7 +9,7 @@ const Gears = (props: Props) => {
   return (
     <section className="p-4 flex flex-col">
       <h1 className="hello mx-10 my-8 relative text-2xl ">My Gears</h1>
-      <div className="grid grid-cols-3 gap-6 mb-6 place-items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 mb-6 place-items-center">
         {array.map((ele, i) => (
           <GearCard key={i} gear={ele} />
         ))}

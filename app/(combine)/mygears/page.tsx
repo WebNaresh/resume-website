@@ -7,7 +7,7 @@ const Page = (props: Props) => {
   return (
     <div>
       <h1 className="hello mx-16 my-8 relative text-2xl ">My Gears</h1>
-      <div className="p-4 grid grid-cols-3 gap-6 place-items-center">
+      <div className="p-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 place-items-center">
         {array.map((ele, i) => (
           <GearCard key={i} gear={ele} />
         ))}
