@@ -18,3 +18,10 @@ export interface RoutesA {
   label: string;
   active: boolean;
 }
+export interface ProjectDetails {
+  projectName: string;
+  description: string;
+  GitLink: string;
+  LiveLink: string;
+  screenshot: string;
+}
