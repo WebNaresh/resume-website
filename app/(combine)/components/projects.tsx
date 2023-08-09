@@ -14,7 +14,7 @@ const HeroProjects = (props: Props) => {
           <ProjectCard details={ele} key={i} />
         ))}
       </div>
-      <Link href={"/myprojects"} className="w-full">
+      <Link href={"/projects"} className="w-full">
         <Button className=" w-full">Show More</Button>
       </Link>
     </section>
