@@ -33,7 +33,7 @@ const MainNav = (props: Props) => {
     },
   ];
   return (
-    <div className="flex items-center">
+    <div className="flex flex-col lg:flex-row items-center">
       {rountes.map((ele, i) =>
         ele.href === "/" ? (
           <li key={i}>
