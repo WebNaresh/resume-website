@@ -20,6 +20,13 @@ export default Page;
 
 const array: GearCardInterface[] = [
   {
+    name: "My GirlFriend",
+    description: "My love which i fool you",
+    image: "/my-girlfriend.png",
+    amazonLink:
+      "https://www.amazon.in/Mom-Says-Girlfriend-Subhasis-Das/dp/8129117037?keywords=mom+says+no+girlfriend&sr=8-1&linkId=8749fcb92193b588a6f0815b29030ee5&language=en_IN&ref_=as_li_ss_tl",
+  },
+  {
     name: "My Vertical Monitor",
     description: "HP M24f 23.8-Inch(60.45cm)",
     image: "/monitor24inch.png",

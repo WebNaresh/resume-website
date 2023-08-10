@@ -19,6 +19,13 @@ const Projects = (props: Props) => {
 export default Projects;
 const projects: ProjectDetails[] = [
   {
+    projectName: "Portfolio Project",
+    description: "A website with information about myself.",
+    GitLink: "https://github.com/WebNaresh/resume-website",
+    LiveLink: "/",
+    screenshot: "/resume-web.png",
+  },
+  {
     projectName: "Eccomerce Project",
     description:
       "An interesting e-commerce website with a wide range of products.",
