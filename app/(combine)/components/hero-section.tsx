@@ -14,9 +14,11 @@ const Hero = (props: Props) => {
         <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="mt-12 h-full lg:mt-0 flex flex-col justify-evenly">
-              <span className="text-3xl text-muted-foreground">
-                Hi 👋, I&apos;m <br />
-              </span>{" "}
+              <span className="text-3xl text-muted-foreground flex animate-waving">
+                Hi <div className="inline-block wave">&#128075;</div>, I&apos;m{" "}
+                <br />
+              </span>
+
               <div>
                 <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
                   Naresh Bhosale
@@ -36,7 +38,7 @@ const Hero = (props: Props) => {
                   </Link>
                   <Link href={"https://github.com/WebNaresh"}>
                     <Button variant={"outline"}>
-                      <AiFillGithub className="text-xl" color="white" />
+                      <AiFillGithub className="text-xl dark:text-white" />
                     </Button>
                   </Link>
                 </div>

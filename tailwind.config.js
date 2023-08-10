@@ -16,6 +16,27 @@ module.exports = {
       },
     },
     extend: {
+      animation: {
+        waving: "waving 2s ease-in-out infinite",
+        wobble: "wobble 1s ease-in-out infinite",
+      },
+      keyframes: {
+        waving: {
+          "0%, 100%": { transform: "rotate(0)" },
+          "25%": { transform: "rotate(-10deg)" },
+          "50%": { transform: "rotate(10deg)" },
+          "75%": { transform: "rotate(-5deg)" },
+        },
+        wobble: {
+          "0%, 100%": { transform: "rotate(0)" },
+          "15%": { transform: "rotate(-5deg)" },
+          "30%": { transform: "rotate(5deg)" },
+          "45%": { transform: "rotate(-3deg)" },
+          "60%": { transform: "rotate(3deg)" },
+          "75%": { transform: "rotate(-2deg)" },
+          "90%": { transform: "rotate(2deg)" },
+        },
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

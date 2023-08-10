@@ -22,7 +22,7 @@ const Educard = ({ details, index }: Props) => {
         </div>
       </div>
       <div className="order-1 rounded-lg shadow-xl w-full lg:w-5/12 ">
-        <div className=" order-1 mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-slate-900 dark:shadow-black/10">
+        <div className=" order-1 mb-10 ml-6 block max-w-md rounded-lg p-6 shadow-black/5 dark:bg-slate-900 dark:shadow-black/10">
           <div className="mb-4 flex justify-between">
             <Link
               href={details.link1}
