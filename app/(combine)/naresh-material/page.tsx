@@ -54,10 +54,12 @@ const projects: ProjectDetails[] = [
     screenshot: "/isee.jpg",
   },
   {
-    projectName: "Python",
-    description: "Not Completed",
-    GitLink: "https://github.com/WebNaresh/twitterClone",
-    LiveLink: "",
+    projectName: "375 DSA",
+    description: "DSA QUESION",
+    GitLink:
+      "https://docs.google.com/spreadsheets/d/1hXserPuxVoWMG9Hs7y8wVdRCJTcj3xMBAEYUOXQ5Xag/edit#gid=0",
+    LiveLink:
+      "https://docs.google.com/spreadsheets/d/1hXserPuxVoWMG9Hs7y8wVdRCJTcj3xMBAEYUOXQ5Xag/edit#gid=0",
     screenshot: "/not.jpg",
   },
 ];
