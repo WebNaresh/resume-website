@@ -41,7 +41,13 @@ const ProjectCard = ({ details }: Props) => {
         <Link href={details.LiveLink} target="blank">
           <Button variant={"outline"} className="gap-2">
             <GitHubLogoIcon className="" />
-            <div>data Link</div>
+            <div>Live Link</div>
+          </Button>
+        </Link>
+        <Link href={details.GitLink} target="blank">
+          <Button variant={"ghost"} className="gap-2">
+            <GitHubLogoIcon className="" />
+            <div>Git Link</div>
           </Button>
         </Link>
       </CardFooter>
