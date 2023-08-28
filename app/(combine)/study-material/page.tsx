@@ -57,7 +57,7 @@ const projects: ProjectDetails[] = [
     projectName: "Python",
     description: "Not Completed",
     GitLink: "https://github.com/WebNaresh/twitterClone",
-    LiveLink: "not.jpg",
-    screenshot: "/twitter-clone.png",
+    LiveLink: "",
+    screenshot: "/not.jpg",
   },
 ];
