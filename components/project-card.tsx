@@ -38,21 +38,12 @@ const ProjectCard = ({ details }: Props) => {
         <CardDescription>{details.description}</CardDescription>
       </CardHeader>
       <CardFooter className="flex flex-row-reverse justify-between">
-        <Link href={details.GitLink} target="blank">
+        <Link href={details.LiveLink} target="blank">
           <Button variant={"outline"} className="gap-2">
             <GitHubLogoIcon className="" />
-            <div>Project Link</div>
+            <div>data Link</div>
           </Button>
         </Link>
-        <Button variant={"ghost"}>
-          <Link
-            href={details.LiveLink}
-            className="w-full h-full"
-            target="blank"
-          >
-            Live Demo
-          </Link>
-        </Button>
       </CardFooter>
     </Card>
   );
